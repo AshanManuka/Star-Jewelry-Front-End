@@ -1,0 +1,95 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#subDiv{
+  background-color: #282c34;
+  color: aliceblue;
+  min-height: 65vh;
+}
+
+#frameDiv{
+  position: absolute;
+  display: inline-block;
+  width: 60vw;
+  height: 65vh;
+  background-color: rgb(53, 79, 94);
+  margin-left: -30vw;
+  margin-top: 5vh;
+  opacity: 50%;
+  border-radius: 20px;
+}
+
+.grid-container {
+  margin-top: 7%;
+  margin-left: 20vw;
+  width: 60vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 60px);
+  gap: 5px;
+  padding-top: 25px;
+  z-index: 1;
+}
+
+.grid-item {
+  z-index: 1;
+  padding: 5px;
+  text-align: center;
+}
+
+.textInput{
+  margin-top: 3vh;
+  margin-left: -75%;
+  width: 75%;
+  height: 60%;
+  border-radius: 4px;
+  border: white solid 1px;
+  font-size: large;
+}
+
+.dropdown{
+  margin-top: 3vh;
+  margin-left: -100%;
+  width: 55%;
+  height: 60%;
+  border-radius: 3px;
+  border: white solid 1px;
+}
+
+#loginBtn{
+  z-index: 2;
+  position: absolute;
+  margin-top: 3%;
+  width: 40%;
+  margin-left: -20%;
+  border-radius: 3px;
+  max-height: 10%;
+  border: 1px solid seashell;
+  background-color: aquamarine;
+}
+
+
