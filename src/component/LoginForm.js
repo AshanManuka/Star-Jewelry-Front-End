@@ -55,13 +55,13 @@ function LoginForm() {
       <h3 className='smallTitleTwo'>UserName</h3>
       </div>
       <div class="grid-item">
-      <input id='inputOne' className='textInput' placeholder=' username' onChange={changeUserName}></input>
+      <input id='inputOne' className='textInputLogin' placeholder=' username' onChange={changeUserName}></input>
       </div>
       <div class="grid-item">
       <h3 className='smallTitleThree'>Password</h3>
       </div>
       <div class="grid-item">
-      <input id='inputTwo' className='textInput' placeholder=' password' type='password' onChange={changePassword}></input>
+      <input id='inputTwo' className='textInputLogin' placeholder=' password' type='password' onChange={changePassword}></input>
       </div>
     </div>
 

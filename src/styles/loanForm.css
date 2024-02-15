@@ -1,0 +1,94 @@
+body{
+    background-color: #282c34;
+}
+
+#mainDiv{
+    background-color: #282c34;
+}
+
+.subDiv>h1{
+    color: antiquewhite;
+    display: inline-block;
+    padding-left: 34vw;
+}
+
+.subDiv>h2{
+    color: antiquewhite;
+    display: inline-block;
+    margin-left: -34%;
+}
+
+#userDetailCard{
+    background-color: rgb(37, 67, 80);
+    padding-top: 2%;
+    display: inline-block;
+    width: 42vw;
+    margin-left: 7vw;
+    border-radius: 5px;
+    padding-bottom: 5%;
+    padding-left: 4%;
+    padding-right: 0.5%;
+    margin-top: 5vh;
+}
+
+#userDetailCard>h3{
+    color: aliceblue;
+}
+
+.textInput{
+  margin-top: 3vh;
+  margin-left: 2%;
+  width: 35vw;
+  height: 6vh;
+  display: block;
+  border-radius: 4px;
+  border: white solid 1px;
+  font-size: large;
+}
+
+#itemDetailCard{
+    background-color: rgb(37, 67, 80);
+    padding: 2%;
+    display: inline-block;
+    width: 35vw;
+    margin-left: 1vw;
+    border-radius: 5px;
+    margin-top: 5vh;
+    position: absolute;
+}
+
+#itemDetailCard>h3{
+    color:aliceblue;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 0;
+    margin-left: 10%;
+}
+
+.textInputTwo{
+    margin-top: -5vh;
+    margin-left: 50%;
+    width: 15vw;
+    height: 6vh;
+    display: block;
+    border-radius: 4px;
+    border: white solid 1px;
+    font-size: large;
+  }
+
+  #confirmBtn{
+    position: absolute;
+    display: inline-block;
+    margin-top: 70vh;
+    width: 40vw;
+    height: 50px;
+    margin-left: -23vw;
+    border-radius: 5px;
+    border: 1px solid seashell;
+    background-color: rgb(211, 146, 241);
+    font-size: larger;
+    font-weight: 300;
+    font-family: fantasy;
+    color: rgb(0, 0, 0);
+
+  }
