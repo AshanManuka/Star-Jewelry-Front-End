@@ -6,16 +6,18 @@ body{
     background-color: #282c34;
 }
 
-.subDiv>h1{
+.loanSubDiv>h1{
     color: antiquewhite;
     display: inline-block;
     padding-left: 34vw;
+    margin-top: 0.05%;
+    font-size: xxx-large
 }
 
-.subDiv>h2{
+.loanSubDiv>h2{
     color: antiquewhite;
     display: inline-block;
-    margin-left: -34%;
+    margin-left: 1%;
 }
 
 #userDetailCard{
@@ -25,10 +27,10 @@ body{
     width: 42vw;
     margin-left: 7vw;
     border-radius: 5px;
-    padding-bottom: 5%;
+    padding-bottom: 8%;
     padding-left: 4%;
     padding-right: 0.5%;
-    margin-top: 5vh;
+    margin-top: -1%;
 }
 
 #userDetailCard>h3{
@@ -53,7 +55,7 @@ body{
     width: 35vw;
     margin-left: 1vw;
     border-radius: 5px;
-    margin-top: 5vh;
+    margin-top: -1%;
     position: absolute;
 }
 
@@ -79,7 +81,7 @@ body{
   #confirmBtn{
     position: absolute;
     display: inline-block;
-    margin-top: 70vh;
+    margin-top: 36%;
     width: 40vw;
     height: 50px;
     margin-left: -23vw;

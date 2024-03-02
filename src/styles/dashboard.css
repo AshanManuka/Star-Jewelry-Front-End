@@ -25,13 +25,13 @@ body{
     margin-top: 7vh;
 }
 
-.subDiv>h2{
+.mainSubDiv>h2{
     color: antiquewhite;
     display: inline-block;
     padding-left: 35vw;
 }
 
-.subDiv>h1{
+.mainSubDiv>h1{
     color: antiquewhite;
     display: inline-block;
     margin-left: 1%;

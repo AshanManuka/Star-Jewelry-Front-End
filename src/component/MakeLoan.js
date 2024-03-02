@@ -7,6 +7,7 @@ function MakeLoan() {
     const [customerNic, setCustomerNic] = useState("");
     const [customerName, setCustomerName] = useState("");
     const [customerAddress, setCustomerAddress] = useState("");
+    const [itemDescription, setItemDescription] = useState("");
     const [customerTelephone, setCustomerTelephone] = useState("");
     const [loanNumber, setLoanNumber] = useState("");
     const [totalWeight, setTotalWeight] = useState("");
@@ -14,6 +15,8 @@ function MakeLoan() {
     const [estimatedValue, setEstimatedValue] = useState("");
     const [marketValue, setMarketValue] = useState("");
     const [LoanAmount, setLoanAmount] = useState("");
+    const [LoanDuration, setLoanDuration] = useState("");
+    const [LoanInterest, setLoanInterest] = useState("");
 
     const changeCustomerNic = (nameInput) => {
         setCustomerNic(nameInput);
@@ -26,6 +29,9 @@ function MakeLoan() {
     }
     const changeCustomerTelephone = (nameInput) => {
         setCustomerTelephone(nameInput);
+    }
+    const changeItemDescription = (nameInput) => {
+        setItemDescription(nameInput);
     }
     const changeLoanNumber = (nameInput) => {
         setLoanNumber(nameInput);
@@ -45,6 +51,12 @@ function MakeLoan() {
     const changeLoanAmount = (nameInput) => {
         setLoanAmount(nameInput);
     }
+    const changeLoanDuration = (nameInput) => {
+        setLoanDuration(nameInput);
+    }
+    const changeLoanInterest = (nameInput) => {
+        setLoanInterest(nameInput);
+    }
     
 
     const confirmLoan = () => {
@@ -53,16 +65,17 @@ function MakeLoan() {
 
     return(
         <div id="mainDiv">
-            <div className="subDiv">
+            <div className="loanSubDiv">
                 <h1>Gold Loan</h1><h2>Dashboard</h2>
             </div>
 
             <div id='userDetailCard'>
-                <h3>Customer's Details,</h3>
-                <input id='inputOne' className='textInput' placeholder=' Nic' onChange={changeCustomerNic}></input>
-                <input id='inputTwo' className='textInput' placeholder=' Name' onChange={changeCustomerName}></input>
-                <input id='inputThree' className='textInput' placeholder=' Address' onChange={changeCustomerAddress}></input>
-                <input id='inputFour' className='textInput' placeholder=' Telephone' onChange={changeCustomerTelephone}></input>
+                <h3>ණය ලබන්නා පිළිබද විස්තර,</h3>
+                <input id='inputOne' className='textInput' placeholder=' ජාතික හැදුනුම්පත් අංකය' onChange={changeCustomerNic}></input>
+                <input id='inputTwo' className='textInput' placeholder=' සම්පුර්ණ නම' onChange={changeCustomerName}></input>
+                <input id='inputThree' className='textInput' placeholder=' ලිපිනය' onChange={changeCustomerAddress}></input>
+                <input id='inputFour' className='textInput' placeholder=' දුරකථන අංකය' onChange={changeCustomerTelephone}></input>
+                <input id='inputFive' className='textInput' placeholder=' රන් බාණ්ඩයේ වර්ගය සහ විස්තරය' onChange={changeItemDescription}></input>
             </div>
 
             <div id='itemDetailCard'>
@@ -78,9 +91,13 @@ function MakeLoan() {
                 <input id='itemInputFive' className='textInputTwo' onChange={changeMarketValue}></input>
                 <h3>ණය මුදල</h3>
                 <input id='itemInputSix' className='textInputTwo' onChange={changeLoanAmount}></input>
+                <h3>ගෙවා අවසන් කිරීම</h3>
+                <input id='itemInputSeven' className='textInputTwo' onChange={changeLoanDuration}></input>
+                <h3>පොලිය</h3>
+                <input id='itemInputEight' className='textInputTwo' onChange={changeLoanInterest}></input>
             </div>
 
-            <button id='confirmBtn' onClick={confirmLoan}>Confirm Loan</button>
+            <button id='confirmBtn' onClick={confirmLoan}>Confirm Loan & Print Bill</button>
 
 
 
